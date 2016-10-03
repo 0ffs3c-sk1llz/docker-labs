@@ -34,21 +34,18 @@ This project aims to gather some vulnerable machines by design or CTF challenges
 
 - a very simple poc flask app
 - accessible at 
-    - *10.10.10.3*
-    - flask.0ffs3c-sk1llz.com
+    - *http://10.10.10.3*
+    - http://flask.0ffs3c-sk1llz.com
 
 ### pwnedhub
 
 - Docker of the pwnedhub vulnerable machin by design.
-- The original project is available at https:// github.com/lanmaster53/pwnedhub/
+- The original project is available at https://github.com/lanmaster53/pwnedhub/
 - accessible at 
-    - *10.10.10.4:5000*
-    - pwnedhub.0ffs3c-sk1llz.com:5000
+    - *http://10.10.10.4:5000*
+    - http://pwnedhub.0ffs3c-sk1llz.com:5000
 
 ### unickle
 
-- Docker of the pwnedhub vulnerable machin by design.
-- The original project is available at https:// github.com/lanmaster53/pwnedhub/
-- accessible at 
-    - *10.10.10.5:5000*
-    - unickle.0ffs3c-sk1llz.com:5000
+- *http://10.10.10.5:5000*
+- http://unickle.0ffs3c-sk1llz.com:5000
