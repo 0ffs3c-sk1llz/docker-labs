@@ -36,3 +36,13 @@ services:
     networks:
      default:
       ipv4_address: 10.10.10.4
+  
+  unickle:
+    build: unickle
+    image: unickle
+    hostname: unickle
+    dns: 10.10.10.2
+    dns_search: 0ffs3c-sk1llz.com
+    networks:
+     default:
+      ipv4_address: 10.10.10.5
