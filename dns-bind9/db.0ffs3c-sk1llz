@@ -1,0 +1,13 @@
+$TTL    604800
+@       IN      SOA     0ffs3c-sk1llz.com. root.0ffs3c-sk1llz.com. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      0ffs3c-sk1llz.com.
+@       IN      A       10.10.10.2
+dns     IN      A       10.10.10.2
+flask   IN      A       10.10.10.3
+pwnedhub   IN      A       10.10.10.4

@@ -1,0 +1,13 @@
+$TTL    604800
+$ORIGIN 10.10.10.IN-ADDR.ARPA.
+@       IN      SOA     0ffs3c-sk1llz.com. root.0ffs3c-sk1llz.com. (
+                              1         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@       IN      NS      0ffs3c-sk1llz.com.
+2     IN      PTR     0ffs3c-sk1llz.com.
+3     IN      PTR     flask.0ffs3c-sk1llz.com.
+4     IN      PTR     pwnedhub.0ffs3c-sk1llz.com.

@@ -1,0 +1,38 @@
+version: '2'
+networks:
+  default:
+    external:
+      name: ctf_nw
+
+services:
+  custom_dns:
+    build: dns-bind9
+    image: dns-bind9
+    volumes:
+            - ./dns-bind9/db.0ffs3c-sk1llz:/etc/bind/db.0ffs3c-sk1llz            
+            - ./dns-bind9/db.10:/etc/bind/db.10
+            - ./dns-bind9/named.conf.local:/etc/bind/named.conf.local
+    hostname: dns
+    networks:
+     default:
+      ipv4_address: 10.10.10.2
+
+  docker_flask:
+    build: docker-flask
+    image: docker-flask
+    hostname: flask
+    dns: 10.10.10.2
+    dns_search: 0ffs3c-sk1llz.com
+    networks:
+     default:
+      ipv4_address: 10.10.10.3
+
+  pwnedhub:
+    build: pwnedhub
+    image: pwnedhub
+    hostname: pwnedhub
+    dns: 10.10.10.2
+    dns_search: 0ffs3c-sk1llz.com
+    networks:
+     default:
+      ipv4_address: 10.10.10.4
