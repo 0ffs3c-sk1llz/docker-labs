@@ -44,3 +44,11 @@ This project aims to gather some vulnerable machines by design or CTF challenges
 - accessible at 
     - *10.10.10.4:5000*
     - pwnedhub.0ffs3c-sk1llz.com:5000
+
+### unickle
+
+- Docker of the pwnedhub vulnerable machin by design.
+- The original project is available at https:// github.com/lanmaster53/pwnedhub/
+- accessible at 
+    - *10.10.10.5:5000*
+    - unickle.0ffs3c-sk1llz.com:5000
