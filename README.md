@@ -2,18 +2,18 @@
 
 This project aims to gather some vulnerable machines by design or CTF challenges under docker machines. 
 
-## Prerequisites
+## Prerequisites install and configuration
 
-- Install docker-compose:
+Install docker-compose:
 
-		curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+	curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 
 
-- Create the bridge network
+Create the bridge network
 
     	docker network create --driver=bridge --subnet=10.10.10.0/24 ctf_nw
 
-- Create the customized parent debian image
+Create the customized parent debian image
 
     	docker build -t debian_custom ./base
 
@@ -26,14 +26,14 @@ This project aims to gather some vulnerable machines by design or CTF challenges
 ### DNS Bind 9
 
 - a local DNS used to link containers together
-- accessible from :
+- accessible at :
     - *10.10.10.2*
     - dns.0ffs3c-sk1llz.com
 
 ### docker-flask
 
 - a very simple poc flask app
-- accessible at 
+- accessible at :
     - *http://10.10.10.3*
     - http://flask.0ffs3c-sk1llz.com
 
@@ -41,7 +41,7 @@ This project aims to gather some vulnerable machines by design or CTF challenges
 
 - Docker of the pwnedhub vulnerable machin by design.
 - The original project is available at https://github.com/lanmaster53/pwnedhub/
-- accessible at 
+- accessible at :
     - *http://10.10.10.4:5000*
     - http://pwnedhub.0ffs3c-sk1llz.com:5000
 
