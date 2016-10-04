@@ -9,7 +9,8 @@ Install docker-compose:
     curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 
 
-Create the bridge network
+Create the bridge network `̀ctf_nw`. 
+Each container can be accessed in the subnet `10.10.10.1-255` 
 
     docker network create --driver=bridge --subnet=10.10.10.0/24 ctf_nw
 
