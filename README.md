@@ -6,16 +6,16 @@ This project aims to gather some vulnerable machines by design or CTF challenges
 
 Install docker-compose:
 
-	curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
+    curl -L https://github.com/docker/compose/releases/download/1.8.0/docker-compose-`uname -s`-`uname -m` > /usr/local/bin/docker-compose
 
 
 Create the bridge network
 
-    	docker network create --driver=bridge --subnet=10.10.10.0/24 ctf_nw
+    docker network create --driver=bridge --subnet=10.10.10.0/24 ctf_nw
 
 Create the customized parent debian image
 
-    	docker build -t debian_custom ./base
+    docker build -t debian_custom ./base
 
 ## Create you containers
 
