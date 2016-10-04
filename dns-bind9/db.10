@@ -8,6 +8,8 @@ $ORIGIN 10.10.10.IN-ADDR.ARPA.
                          604800 )       ; Negative Cache TTL
 ;
 @       IN      NS      0ffs3c-sk1llz.com.
-2     IN      PTR     0ffs3c-sk1llz.com.
-3     IN      PTR     flask.0ffs3c-sk1llz.com.
-4     IN      PTR     pwnedhub.0ffs3c-sk1llz.com.
+2     IN      PTR     vm2-0ffs3c-sk1llz.com.
+3     IN      PTR     vm3-flask.0ffs3c-sk1llz.com.
+4     IN      PTR     vm4-pwnedhub.0ffs3c-sk1llz.com.
+5     IN      PTR     vm5-unickle.0ffs3c-sk1llz.com.
+6     IN      PTR     vm6-lamp.0ffs3c-sk1llz.com.

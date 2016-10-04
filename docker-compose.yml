@@ -12,7 +12,7 @@ services:
             - ./dns-bind9/db.0ffs3c-sk1llz:/etc/bind/db.0ffs3c-sk1llz            
             - ./dns-bind9/db.10:/etc/bind/db.10
             - ./dns-bind9/named.conf.local:/etc/bind/named.conf.local
-    hostname: dns
+    hostname: vm2-dns
     networks:
      default:
       ipv4_address: 10.10.10.2
@@ -20,7 +20,7 @@ services:
   docker_flask:
     build: docker-flask
     image: docker-flask
-    hostname: flask
+    hostname: vm3-flask
     dns: 10.10.10.2
     dns_search: 0ffs3c-sk1llz.com
     networks:
@@ -30,7 +30,7 @@ services:
   pwnedhub:
     build: pwnedhub
     image: pwnedhub
-    hostname: pwnedhub
+    hostname: vm4-pwnedhub
     dns: 10.10.10.2
     dns_search: 0ffs3c-sk1llz.com
     networks:
@@ -40,9 +40,33 @@ services:
   unickle:
     build: unickle
     image: unickle
-    hostname: unickle
+    hostname: vm5-unickle
     dns: 10.10.10.2
     dns_search: 0ffs3c-sk1llz.com
     networks:
      default:
       ipv4_address: 10.10.10.5
+
+  lamp:
+    build: lamp
+    image: lamp
+    hostname: vm6-lamp
+    dns: 10.10.10.2
+    dns_search: 0ffs3c-sk1llz.com
+    volumes:
+            - ./lamp/www:/var/www/html  
+    networks:
+     default:
+      ipv4_address: 10.10.10.6
+
+  lamp-2:
+    build: lamp
+    image: lamp
+    hostname: vm7-lamp
+    dns: 10.10.10.2
+    dns_search: 0ffs3c-sk1llz.com
+    volumes:
+            - ./lamp/lab3:/var/www/html  
+    networks:
+     default:
+      ipv4_address: 10.10.10.7

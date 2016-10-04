@@ -8,6 +8,8 @@ $TTL    604800
 ;
 @       IN      NS      0ffs3c-sk1llz.com.
 @       IN      A       10.10.10.2
-dns     IN      A       10.10.10.2
-flask   IN      A       10.10.10.3
-pwnedhub   IN      A       10.10.10.4
+vm2-dns     IN      A       10.10.10.2
+vm3-flask   IN      A       10.10.10.3
+vm4-pwnedhub   IN      A       10.10.10.4
+vm5-unickle   IN      A       10.10.10.5
+vm6-lamp   IN      A       10.10.10.6
