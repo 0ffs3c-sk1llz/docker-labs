@@ -50,3 +50,9 @@ Create the customized parent debian image
 
 - *http://10.10.10.5:5000*
 - http://unickle.0ffs3c-sk1llz.com:5000
+
+
+### lamp
+
+- *http://10.10.10.6:5000*
+- http://vm6-lamp.0ffs3c-sk1llz.com:5000
